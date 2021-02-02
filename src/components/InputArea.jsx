@@ -4,8 +4,8 @@ function InputArea(props) {
   return (
     <div className="form">
       <input
-        onChange={() => {
-          props.handleChange();
+        onChange={(e) => {
+          props.handleChange(e);
         }}
         type="text"
         value={props.inputText}

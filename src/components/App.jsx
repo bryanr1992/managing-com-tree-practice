@@ -7,6 +7,7 @@ function App() {
   const [items, setItems] = useState([]);
 
   function handleChange(event) {
+    event.preventDefault();
     const newValue = event.target.value;
     setInputText(newValue);
   }
